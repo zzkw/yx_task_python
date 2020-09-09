@@ -2,7 +2,7 @@
 date +%F_%H
 cd /data1/asiainfo/interface/BAS/data/
 lastmon=$(date "+%Y%m" -d "-1 months")
-filename="guangdong_zhuanpinpai_"$lastmon".txt"
+filename="guangdong_**_"$lastmon".txt"
 while true
 do
   if [ -f "$filename" ];then
@@ -20,10 +20,10 @@ done
 filename1=$filename".tmp"
 sftp_Host="192.168.232.129"
 sftp_userName="root"
-sftp_passWord="zzkw135"
+sftp_passWord="**"
 sftp_port=22
-sftpRemotePath="/data7/asiainfo/interface/temp/houqiang/"
-sftpLocalPath="/data1/asiainfo/interface/BAS/data/"
+sftpRemotePath="/data7/**"
+sftpLocalPath="/data1/***"
 
 sftp_transfer()
 {
